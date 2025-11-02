@@ -2,12 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "iedc_news",
   "compatibility_date": "2025-08-03",
-  "main": "./src/index.tsx"
-  // "d1_databases": [
-  //   {
-  //     "binding": "db",
-  //     "database_id": "",
-  //     "database_name": ""
-  //   }
-  // ]
+  "main": "./src/index.tsx",
+  "d1_databases": [
+    {
+      "binding": "db",
+      "database_id": "40242599-73e1-4bf9-8549-29652ed805bb",
+      "database_name": "simpl-auth"
+    }
+  ]
 }
