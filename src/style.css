@@ -1,0 +1,386 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
+
+/* --- Page --- */
+.editorial-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+}
+
+/* --- Header --- */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 2px solid #000;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  object-fit: contain;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.site-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0;
+}
+
+.site-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 400;
+}
+
+/* --- Article --- */
+.article-main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.article-header {
+  margin-bottom: 2.5rem;
+}
+
+.article-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  margin-bottom: 1.5rem;
+}
+
+.article-header-spacer {
+  width: 5px;
+  background: #000;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.article-header-logo {
+  flex-shrink: 0;
+}
+
+.article-header-logo img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  object-fit: contain;
+}
+
+.article-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+  letter-spacing: -1.5px;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.article-date {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.article-hero {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.article-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Content --- */
+.article-prose {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.article-prose p {
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 1.3rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  color: #1a1a1a;
+}
+
+.article-prose .lede {
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 1.65rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  border-left: 4px solid #000;
+}
+
+/* --- Footer --- */
+.page-footer {
+  margin-top: 6rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid #000;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+}
+
+.footer-logo img,
+.footer-logo svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: contain;
+}
+
+/* --- Feature Section --- */
+.article-feature {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 2px solid #000;
+}
+
+.feature-container {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.feature-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 60px;
+  background: #000;
+}
+
+.feature-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.feature-content p {
+  font-family: "Crimson Text", "Georgia", serif;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  color: #2a2a2a;
+  max-width: 75ch;
+}
+
+.footer-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  body {
+    background: #ffffff;
+  }
+
+  .editorial-page {
+    padding: 2rem 1.5rem;
+    box-shadow: none;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .article-header-wrapper {
+    gap: 1rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .article-header-spacer {
+    width: 3px;
+  }
+
+  .article-header-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .article-title {
+    font-size: 1.75rem;
+    letter-spacing: -0.75px;
+  }
+
+  .article-date {
+    font-size: 0.875rem;
+  }
+
+  .article-hero::after {
+    display: none;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .article-sidebar {
+    display: none;
+  }
+
+  .article-prose p {
+    font-size: 1.15rem;
+  }
+
+  .article-prose .lede {
+    font-size: 1.35rem;
+  }
+
+  .feature-container {
+    padding-left: 1.5rem;
+  }
+
+  .feature-title {
+    font-size: 1.75rem;
+  }
+
+  .feature-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+
+  *{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  .article-header-wrapper {
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .article-header-spacer {
+    display: none;
+  }
+
+  .article-header-logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+
+  .article-prose .lede {
+    font-size: 1.2rem;
+  }
+
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-logo img,
+  .footer-logo svg {
+    width: 30px;
+    height: 30px;
+  }
+}
