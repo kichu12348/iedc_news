@@ -307,6 +307,36 @@ body {
   line-height: 1.6;
 }
 
+.not-found-credit {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.heart-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.1);
+  }
+  20%, 40% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .sad-face {
     width: 150px;
@@ -323,6 +353,15 @@ body {
 
   .not-found-description {
     font-size: 1rem;
+  }
+  
+  .not-found-credit {
+    font-size: 0.9rem;
+  }
+  
+  .heart-icon {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -346,6 +385,16 @@ body {
 
   .not-found-description {
     font-size: 0.95rem;
+  }
+  
+  .not-found-credit {
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+  }
+  
+  .heart-icon {
+    width: 14px;
+    height: 14px;
   }
 }
 
