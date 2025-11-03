@@ -90,7 +90,12 @@ export const BlogPostPage = ({ post }: BlogPostProps) => {
           </div>
           <p>© 2025 IEDC Bootcamp CEC</p>
         </div>
-        <div className="not-found-credit no-margin">
+        <div
+          className="not-found-credit"
+          style={{
+            marginTop: 0,
+          }}
+        >
           <span>Made Wid </span>
           <svg
             className="heart-icon"
