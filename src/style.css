@@ -191,7 +191,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+}
+
+.no-margin{
+  margin:0;
 }
 
 .footer-content {
